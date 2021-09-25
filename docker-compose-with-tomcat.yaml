@@ -41,7 +41,7 @@ services:
         ports:
           - 8080:8080
         volumes:
-          - /Users/rajesh/tools/tomcat8/webapps:/opt/tomcat/webapps
+          - ./tomcat/webapps:/opt/tomcat/webapps
           - ./tomcat/shared/classes:/opt/tomcat/shared/classes
           - ./tomcat/conf/tomcat-users.xml:/opt/tomcat/conf/tomcat-users.xml
           - ./tomcat/shell.sh:/root/shell.sh
